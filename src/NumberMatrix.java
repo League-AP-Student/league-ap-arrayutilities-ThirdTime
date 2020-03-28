@@ -21,7 +21,7 @@ public class NumberMatrix {
 			int firstVal = matrix[i - 1][matrix[i-1].length-1];
 			ArrayUtil.shiftArray(matrix[i], firstVal);
 		}
-		
+		matrix[0][0] = num;
 		
 	}
 	
