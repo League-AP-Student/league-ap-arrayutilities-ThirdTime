@@ -34,6 +34,8 @@ public class NumberMatrix {
 	public void rotateMatrix()
 	{ /* to be implemented in part (c) */ 
 		
+		int lastElement = matrix[matrix.length-1][matrix[0].length-1];
+		shiftMatrix(lastElement);
 	}
 	
 	// There may be instance variables, constructors, and methods that are not
