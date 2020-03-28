@@ -20,12 +20,13 @@ public class NumberMatrix {
 	 */
 	public void shiftMatrix(int num) { /* to be implemented in part (b) */
 		for (int i = matrix.length - 1; i >= 0; i--) {
+			int firstVal;
 			if (i == 0) {
-				matrix[0][0] = num;
+				firstVal = num;
 			} else {
-				int firstVal = matrix[i - 1][matrix[i - 1].length - 1];
-				ArrayUtil.shiftArray(matrix[i], firstVal);
+				firstVal = matrix[i - 1][matrix[i - 1].length - 1];
 			}
+			ArrayUtil.shiftArray(matrix[i], firstVal);
 		}
 
 	}
