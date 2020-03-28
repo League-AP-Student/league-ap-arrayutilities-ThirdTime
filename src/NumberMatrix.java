@@ -17,7 +17,10 @@ public class NumberMatrix {
 	 */	
 	public void shiftMatrix(int num)
 	{ /* to be implemented in part (b) */ 
-		
+		for(int i = matrix.length-1; i >=0;i--) {
+			int firstVal = matrix[i - 1][matrix[i-1].length-1];
+			ArrayUtil.shiftArray(matrix[i], firstVal);
+		}
 		
 		
 	}
